@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stlyesheet" href="reset.css"><!-- CSS reset -->
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <section class="section-block" id="section-1">
+        <div id="landing-page-image-container">
+            <img src="images/marie-curie.jpg" alt="marie curie" id="landing-page-image">
+        </div>
+        <div id="text-wrapper-1">
+            <div id="text-wrapper-inner">
+                <h1 id="article-title">Oppdrag</h1>
+
+                <p id="paragraph-p1">
+                    Dr. Doppler har invitert deg til å delta i et av hans nye forskningsprosjekt. Du står du i
+                    resepsjonen i forskningsbygget til Dr. Doppler og skal registrere deg som gjest.
+                    I det du trykker ENTER går alarmen!! Bak resepsjonisten ser du overvåkningskameraene og du ser en
+                    mann som prøver febrilsk å komme seg ut av laboratoriet.
+                    Det er Dr. Doppler!!
+                </p>
+                <p id="paragraph-p1">
+                    Personalet i forskningsbygget løper ut av bygget. Resepsjonisten løper ut og ber deg gjøre det
+                    samme.
+                    Akkurat i det du er på vei ut av hoveddøren, kommer en det en stemme over lydanlegget…
+                </p>
+                <p id="paragraph-p1">
+                    «Du som skulle besøke Dr. Doppler akkurat nå! sier stemmen.. Du snur deg forundret rundt i alt
+                    kaoset.
+                    Hvis du vil se Dr. Doppler i live, må du løse gåtene som står foran deg. Hvis ikke, blir han strålet
+                    ihjel av radioaktiv stråling!
+                    Gå tilbake til resepsjonen og se hva som står på skjermen til deg!»
+                </p>
+            </div>
+        </div>
+        <div id="icon-bar">
+            <div class="icon-bar">
+                <img src="images/arrowup.png" id="arrowup">
+                <br>
+                <img src="images/arrowdown.png" id="arrowdown"> 
+              </div>
+        </div>
+    </section>
+    <section class="section-block" id="section-2">
+        <div id="text-wrapper-2">
+            <p id="small-paragraph">Stemmen over lydanlegget fortsetter:</p>
+            <p id="paragraph-p2">
+                «Du må fylle ut serien av spaltinger og Dr. Doppler går fri. Men du må ikke tro at du får noen lette
+                oppgaver her! Hahahahaha!!
+                Første gåte er å finne ut hva grunnstoffsymbolene som de kjente forskerne Henri Becquerel og Marie Curie
+                er kjent for?»
+            </p>
+        </div>
+    </section>
+    <section class="section-block" id="section-3">
+        <div id="textwrapper-toolbox">
+            <h1 id="toolbox-h1">Verktøy du trenger for å løse oppgaven</h1>
+            <p small-paragraph>Scroll videre og se YouTube-filmene</p>
+            <a href="">Periodiske system (UIO)</a>
+            <br>
+            <a href="">Blueprint</a>
+        </div>
+    </section>
+    <section class="section-block" id="section-4">
+        <div id="text-wrapper-4">
+            <h1 id="paragraph-h1">Forskerpioneerer</h1>
+            <p id="paragraph-p4">
+                Marie Curie var den første kvinnen til å vinne Nobelpris i to kategorier, fysikk 1903 og kjemi i 1911.
+                Nobelprisen hun fikk i fysikk i 1903 var sammen med Henri Becquerel. Sammen var de pionerer innen sin
+                forskning om radioaktivitet.
+            </p>
+        </div>
+    </section>
+    <section class="section-block" id="section-5">
+        <div id="youtube">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/ZEV4KJBJvEg" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="section-block" id="section-6">
+        <div id ="image-container-map">
+        <img src="images/Group 106.png" alt="kart" id="map-image">
+        </div>
+        <div id="text-wrapper-5">
+            <h1 id="paragraph-h1">Korridoren</h1>
+            <p id="paragraph-p5">Du befinner deg nå i korridoren… På skjermen i korridoren får du opp en ny video som du
+                MÅ se før du går videre!</p>
+        </div>
+    </section>
+    <section class="section-block" id="section-7">
+        <div id="whitebox">
+                <img src="images/lock.png" alt="lock" id="lock-image">
+        </div>
+    </section>
+
+    <script type="text/javascript" scr="script.js">
+    const btnUp = document.getElementById('arrowup');
+    const btnDown  = document.getElementById('arrowdown');
+    let pageHeight = window.innerHeight;
+    btnUp.addEventListener('click', function(){
+        window.scrollBy(100, -pageHeight);
+        
+    })
+
+    btnDown.addEventListener('click', function(){
+        window.scrollBy(0, pageHeight);
+        
+    })
+
+    </script>
+</body>
+
+</html>
