@@ -1,0 +1,269 @@
+/*default css*/
+html{
+   scroll-behavior: smooth;
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
+/* Button */
+#icon-bar{
+   position: fixed;
+   top: 90%;
+   right: 1%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+.icon-bar a {
+   display: block;
+   text-align: center;
+   padding: 16px;
+   transition: all 0.3s ease;
+ }
+ 
+.icon-bar img:hover {
+   filter: invert(50%);
+ }
+ #arrowup{
+   width: 75%;
+ }
+ #arrowdown{
+   width: 75%;
+ }
+ 
+/*Section 1 styling*/
+#section-1{
+   display: flex;
+   flex-direction: row;
+}
+#landing-page-image-container{
+  height: 100%;
+  width: 100%;
+  
+}
+#landing-page-image{
+   height: 100%;
+}
+#text-wrapper-1{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+#text-wrapper-1 >* {
+   grid-column: 2/3;
+   grid-row: 2/3;
+}
+.section-block{
+  height:100vh; 
+}
+ /*Section 2 styling*/
+#section-2{
+   display: grid;
+   background-color: #0D75FC;
+   grid-template-columns: 1fr 5fr 1fr;
+   grid-row: 1fr 1fr 1fr;
+}
+#text-wrapper-2{
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+#small-paragraph{
+   color: #FFFFFF;
+}
+#paragraph-p2{
+   color:#FFFFFF;
+   font-size: 30px;
+}
+
+/*section 3 styling*/ 
+#section-3{
+  display: grid;
+  background-color: #1D8559;
+  grid-template-columns: 1fr 3fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#textwrapper-toolbox{
+   background-color: #FFFFFF;
+   width: 100%;
+   height: 100%;
+   grid-column: 2/3;
+   grid-row: 2/3;
+   border: black 1px solid;
+   padding: 20px;
+}
+
+/*section 4 styling*/
+#section-4{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+  border: 1px solid black;
+
+}
+#text-wrapper-4{
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+}
+#pargraph-h1{
+  font-size: 40px;
+}
+#paragraph-p4{
+  font-size: 30px;
+
+}
+/*section 5 styling*/
+#section-5{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+}
+#youtube{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/*section 6 styling*/
+#section-6{
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-row: 1fr 2fr 1fr;
+  background-color: #D2DFC3;
+}
+#image-container-map{
+grid-column: 2/3;
+grid-row: 2/3;
+justify-self: center;
+}
+#map-image{
+  width: 100%;
+  justify-self: center;
+}
+#text-wrapper-5{
+  grid-column: 2/3;
+  grid-row: 3/3;
+}
+#paragraph-h1{
+  font-size: 40px;
+}
+#paragraph-p5{
+  font-size: 30px;
+}
+/*section 7 styling*/
+#section-7{
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr ;
+  grid-template-rows: 1fr 8fr 1fr;
+  background-color:#1D8559;
+  
+}
+#whitebox{
+
+   grid-column: 2/3;
+   grid-row: 2/3;
+   width: 100%;
+   height: 95%;
+   background-color: #FFFFFF;
+   text-align: center;
+   
+}
+#lock-image{
+  margin-top: 10%;
+  width: 25%; 
+  height: 60%;
+  justify-content: center;
+}
+#lock-div{
+  margin-top: 75px;
+  justify-content: center;
+}
+/* font styling */ 
+h1{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 40px;
+}
+p{
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* Large Devices, Wide Screens */
+@media all and (max-width : 1100px) {
+  #section-1{
+    display: flex;
+    flex-direction: column;
+  }
+  #landing-page-image-container{
+    
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+
+  }
+  #landing-page-image{
+    position: relative;
+    top: -20%;
+    width: 100%;
+    height: 400%;
+    
+ }
+  
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  #landing-page-image-container{
+    display: none;
+
+  }
+  #landing-page-image{
+    display: none;
+  }
+  #icon-bar{
+    display: none;
+   }
+   .icon-bar a {
+    display: none;
+   }
+    
+  .icon-bar img:hover {
+    display: none;
+  }
+  #arrowup{
+    display: none;
+  }
+  iframe{
+    width:320px;
+    height:180px;
+     
+}
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  #landing-page-image{
+    display: none;
+  }
+  #landing-page-image-container{
+    display: none;
+
+  }
+  #text-wrapper-1{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 0fr 9fr ;
+  }
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+ }
+ 
+ @media only screen and (max-width: 890px) {
+ }
